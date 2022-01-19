@@ -1,0 +1,57 @@
+@font-face {
+    font-family: HangryHand-Regular;
+    src: url(/font/HangryHand-Regular.ttf);
+}
+
+@font-face {
+    font-family: SilkFlowerDemo-Regular;
+    src: url(/font/SilkFlowerDemo-Regular.otf);
+}
+
+$primary-color: #ffc5c4;
+$secondary-color: #fb8200;
+$peachy: #fef6eb;
+$funky-yellow: #ffb92b;
+$sultry-red: #ba3c40;
+$chic-pink: #f3a58f;
+$true-blue: #43a3a2;
+
+$primary-font: "HangryHand-Regular";
+$secondary-font: "SilkFlowerDemo-Regular";
+
+%main-txt {
+    display: flex;
+    position: relative;
+    //    margin-right: 10%;
+    //margin-left: 1200px;
+    margin-top: -900px;
+    font-family: $secondary-font;
+    color: #fff;
+    //line-height: 0.95em;
+    letter-spacing: 20%;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 1.15em;
+    letter-spacing: 5px;
+   // z-index: 2;
+    animation:bounce;
+    animation-duration: 3s;
+}
+
+%cta-btn {
+    width: 18em;
+    height: 5em;
+    position: relative;
+    //margin-top: -30em;
+    //z-index: 3;
+    border: none;
+    border-radius: 2.5em;
+    background-color: $primary-color;
+    font-family: $primary-font;
+
+    a {
+        font-size: 40px;
+        text-decoration: none;
+        color: #fff;
+    }
+}

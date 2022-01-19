@@ -1,0 +1,144 @@
+@font-face {
+  font-family: HangryHand-Regular;
+  src: url(/font/HangryHand-Regular.ttf);
+}
+
+@font-face {
+  font-family: SilkFlowerDemo-Regular;
+  src: url(/font/SilkFlowerDemo-Regular.otf);
+}
+
+#book-movie .main-txt, #study-tips .main-txt {
+  display: flex;
+  position: relative;
+  margin-top: -900px;
+  font-family: "SilkFlowerDemo-Regular";
+  color: #fff;
+  letter-spacing: 20%;
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 1.15em;
+  letter-spacing: 5px;
+  animation: bounce;
+  animation-duration: 3s;
+}
+
+#book-movie .cta-btn, #study-tips .cta-btn {
+  width: 18em;
+  height: 5em;
+  position: relative;
+  border: none;
+  border-radius: 2.5em;
+  background-color: #ffc5c4;
+  font-family: "HangryHand-Regular";
+}
+
+#book-movie .cta-btn a, #study-tips .cta-btn a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3a58f;
+}
+
+.social {
+  margin-top: auto;
+  position: sticky;
+  margin-bottom: 0;
+}
+
+.social li, .social a {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  margin-left: 15px;
+  padding-top: 40px;
+  list-style: none;
+  position: relative;
+}
+
+.social li:hover, .social a:hover {
+  color: #ffc5c4;
+}
+
+.social .vl {
+  border-left: 2px solid white;
+  height: 150px;
+  margin-left: 40px;
+  padding-top: 20px;
+  margin-top: 40px;
+  position: relative;
+}
+
+#book-movie .book-movie-bg {
+  position: relative;
+  width: 100%;
+}
+
+#book-movie .container {
+  margin-top: 5em;
+}
+
+#book-movie .main-txt {
+  margin-top: -900px;
+  float: right;
+  text-align: right;
+  justify-content: flex-end;
+  /*
+        .highlight{
+            width: auto;
+            margin-top: 250px;
+            float: right;
+            text-align: right;
+            justify-content: flex-end;
+            background-color: $secondary-color;
+        }
+        */
+}
+
+#book-movie .cta-btn {
+  margin-top: -25em;
+  letter-spacing: 5px;
+  float: right;
+}
+
+#univ-life .univ-bg-gif {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  position: relative;
+  margin: 10% auto 10% auto;
+}
+
+#study-tips .study-tips-bg {
+  position: relative;
+}
+
+#study-tips .container {
+  margin-top: 10em;
+}
+
+#study-tips .main-txt {
+  text-align: left;
+}
+
+#study-tips .cta-btn {
+  margin-top: 4em;
+  letter-spacing: 5px;
+}
+
+span {
+  color: #ffb92b;
+}
+/*# sourceMappingURL=styles.css.map */

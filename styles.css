@@ -39,6 +39,23 @@
   color: #fff;
 }
 
+#book-movie .cta-btn:hover, #study-tips .cta-btn:hover {
+  background-color: #fb8200;
+}
+
+#book-movie .cta-btn:hover a, #study-tips .cta-btn:hover a {
+  font-size: 0px;
+}
+
+#book-movie .cta-btn:hover::after, #study-tips .cta-btn:hover::after {
+  content: attr(data-hover);
+}
+
+#book-movie .cta-btn:hover::after a, #study-tips .cta-btn:hover::after a {
+  font-size: 40px;
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -67,6 +84,9 @@ body {
 
 .social li:hover, .social a:hover {
   color: #ffc5c4;
+  position: relative;
+  transform: scale(0.98);
+  transform: translateY(-5px);
 }
 
 .social .vl {
@@ -76,6 +96,11 @@ body {
   padding-top: 20px;
   margin-top: 40px;
   position: relative;
+  transition: none;
+}
+
+.social .vl:hover {
+  transform: none;
 }
 
 #book-movie .book-movie-bg {

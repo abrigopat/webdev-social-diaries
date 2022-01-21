@@ -29,6 +29,9 @@ body{
 
         &:hover{
             color: $primary-color;
+            position: relative;
+            transform: scale(.98);
+            transform: translateY(-5px);
         }
     }
 
@@ -40,6 +43,11 @@ body{
         margin-top: 40px;
         position: relative;
         //z-index: 2;
+        transition: none ;
+
+        &:hover{
+            transform: none;
+        }
     }
 }
 

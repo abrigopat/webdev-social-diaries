@@ -54,4 +54,21 @@ $secondary-font: "SilkFlowerDemo-Regular";
         text-decoration: none;
         color: #fff;
     }
+
+    &:hover {
+        background-color:$secondary-color;
+
+        a{
+           font-size: 0px;
+        }
+    }
+
+    &:hover::after {
+        content: attr(data-hover);
+
+        a{
+            font-size: 40px;
+            color: #fff;
+        }
+    }
 }

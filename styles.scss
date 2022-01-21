@@ -26,6 +26,7 @@ body{
         list-style: none;
         position: relative;
         //z-index: 2;
+        transition: all .20s ease-in-out ;
 
         &:hover{
             color: $primary-color;

@@ -80,6 +80,7 @@ body {
   padding-top: 40px;
   list-style: none;
   position: relative;
+  transition: all .20s ease-in-out;
 }
 
 .social li:hover, .social a:hover {

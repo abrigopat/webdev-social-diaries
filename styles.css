@@ -70,6 +70,7 @@ body {
   margin-top: auto;
   position: sticky;
   margin-bottom: 0;
+  width: 5%;
 }
 
 .social li, .social a {
@@ -164,7 +165,63 @@ body {
   letter-spacing: 5px;
 }
 
-span {
-  color: #ffb92b;
+#study-tips {
+  width: 100%;
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+
+#study-tips .tips-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 1.75em;
+  width: 30em;
+  height: 50em;
+}
+
+#study-tips .tips-list .tip-container, #study-tips .tips-list li {
+  background-color: #ffc5c4;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  margin-right: 10%;
+  width: 100%;
+  transition: all .20s ease-in-out;
+}
+
+#study-tips .tips-list .tip-container:hover, #study-tips .tips-list li:hover {
+  transform: scale(0.98);
+  transform: translateY(-5px);
+}
+
+#study-tips .tips-list .tip-container img, #study-tips .tips-list li img {
+  object-fit: contain;
+  width: 350px;
+  height: 350px;
+}
+
+#study-tips .tips-list .tip-container .tip-txt, #study-tips .tips-list li .tip-txt {
+  font-family: "HangryHand-Regular";
+}
+
+#study-tips .tips-list .tip-container .tip-txt h3, #study-tips .tips-list li .tip-txt h3 {
+  color: #fb8200;
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+#study-tips .tips-list .tip-container .tip-txt p, #study-tips .tips-list li .tip-txt p {
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: #fff;
+  width: 100%;
+  padding: 0;
 }
 /*# sourceMappingURL=styles.css.map */

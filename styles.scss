@@ -15,6 +15,7 @@ body{
     margin-top: auto;
     position: sticky;
     margin-bottom: 0;
+    width: 5%;
     //z-index: 2;
 
     li, a{
@@ -132,6 +133,66 @@ body{
     }
 }
 
-span{
-    color: $funky-yellow;
+// SUBPAGE - STUDY TIPS
+#study-tips{
+    width: 100%;
+    animation: fadeIn;
+    animation-duration: 3s;
+
+    .tips-list{
+        list-style: none;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        position: relative;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-left: 1.75em;
+        width:30em;
+        height: 50em;
+
+        .tip-container, li{
+            background-color: $primary-color;
+            padding-left: 15px;
+            padding-top: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            margin-right: 10%;
+            width: 100%;
+            transition: all .20s ease-in-out ;
+
+            &:hover{
+                transform: scale(.98);
+                transform: translateY(-5px);
+            }
+            
+
+            img{
+                object-fit: contain;
+                width: 350px;
+                height: 350px;
+            }
+
+            .tip-txt{
+                font-family: $primary-font;
+
+                h3{
+                    color: $secondary-color;
+                    margin-top: 10px;
+                    font-size: 35px;
+                }
+
+                p{
+                    font-size: 24px;
+                    letter-spacing: 1px;
+                    line-height: 25px;
+                    color: #fff;
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+
+    }
+
 }

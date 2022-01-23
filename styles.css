@@ -85,7 +85,10 @@ body {
 }
 
 .social li:hover, .social a:hover {
-  color: #ffc5c4;
+  background: linear-gradient(135deg, #ffc5c4, #ba3c40);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: relative;
   transform: scale(0.98);
   transform: translateY(-5px);

@@ -30,7 +30,12 @@ body{
         transition: all .20s ease-in-out ;
 
         &:hover{
-            color: $primary-color;
+            //color: $primary-color;
+            background: linear-gradient(135deg, $primary-color , $sultry-red);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color:transparent;
             position: relative;
             transform: scale(.98);
             transform: translateY(-5px);

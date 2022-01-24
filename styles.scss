@@ -18,16 +18,18 @@ body{
     width: 5%;
     //z-index: 2;
 
-    li, a{
+    li, a, i{
         border: none;
         background-color: transparent;
         color: #fff;
-        margin-left: 15px;
-        padding-top: 40px;
+        margin-left: 10px;
+        padding-top: 30px;
         list-style: none;
         position: relative;
         //z-index: 2;
         transition: all .20s ease-in-out ;
+        text-decoration: none;
+
 
         &:hover{
             //color: $primary-color;
@@ -37,8 +39,9 @@ body{
             background-clip: text;
             -webkit-text-fill-color:transparent;
             position: relative;
-            transform: scale(.98);
+            //transform: scale(.98);
             transform: translateY(-5px);
+            
         }
     }
 

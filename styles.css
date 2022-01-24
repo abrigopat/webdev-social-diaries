@@ -31,6 +31,7 @@
   border-radius: 2.5em;
   background-color: #ffc5c4;
   font-family: "HangryHand-Regular";
+  transition: all 300ms ease-in;
 }
 
 #book-movie .cta-btn a, #study-tips .cta-btn a {
@@ -41,10 +42,11 @@
 
 #book-movie .cta-btn:hover, #study-tips .cta-btn:hover {
   background-color: #fb8200;
-}
-
-#book-movie .cta-btn:hover a, #study-tips .cta-btn:hover a {
-  font-size: 0px;
+  /*
+        a{
+           font-size: 0px;
+        }
+        */
 }
 
 #book-movie .cta-btn:hover::after, #study-tips .cta-btn:hover::after {
@@ -73,24 +75,24 @@ body {
   width: 5%;
 }
 
-.social li, .social a {
+.social li, .social a, .social i {
   border: none;
   background-color: transparent;
   color: #fff;
-  margin-left: 15px;
-  padding-top: 40px;
+  margin-left: 10px;
+  padding-top: 30px;
   list-style: none;
   position: relative;
   transition: all .20s ease-in-out;
+  text-decoration: none;
 }
 
-.social li:hover, .social a:hover {
+.social li:hover, .social a:hover, .social i:hover {
   background: linear-gradient(135deg, #ffc5c4, #ba3c40);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
-  transform: scale(0.98);
   transform: translateY(-5px);
 }
 

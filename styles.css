@@ -11,12 +11,11 @@
 #book-movie .main-txt, #study-tips .main-txt {
   display: flex;
   position: relative;
-  margin-top: -900px;
   font-family: "SilkFlowerDemo-Regular";
   color: #fff;
   letter-spacing: 20%;
   font-weight: bold;
-  font-size: 120px;
+  font-size: 7vw;
   line-height: 1.15em;
   letter-spacing: 5px;
   animation: bounce;
@@ -78,8 +77,8 @@ body {
 .social li, .social a, .social i {
   border: none;
   background-color: transparent;
-  color: #fff;
-  margin-left: 10px;
+  color: peachpuff;
+  margin-left: 15px;
   padding-top: 30px;
   list-style: none;
   position: relative;
@@ -97,9 +96,9 @@ body {
 }
 
 .social .vl {
-  border-left: 2px solid white;
+  border-left: 2px solid peachpuff;
   height: 150px;
-  margin-left: 40px;
+  margin-left: 55px;
   padding-top: 20px;
   margin-top: 40px;
   position: relative;
@@ -116,7 +115,9 @@ body {
 }
 
 #book-movie .container {
-  margin-top: 5em;
+  margin-top: 5%;
+  margin-right: 6vw;
+  position: sticky;
 }
 
 #book-movie .main-txt {
@@ -163,6 +164,7 @@ body {
 
 #study-tips .main-txt {
   text-align: left;
+  margin-top: -900px;
 }
 
 #study-tips .cta-btn {

@@ -10,6 +10,7 @@ body{
     background-color: $chic-pink;
 }
 
+
 // social media icons
 .social{
     margin-top: auto;
@@ -21,8 +22,8 @@ body{
     li, a, i{
         border: none;
         background-color: transparent;
-        color: #fff;
-        margin-left: 10px;
+        color: peachpuff;
+        margin-left: 15px;
         padding-top: 30px;
         list-style: none;
         position: relative;
@@ -46,9 +47,9 @@ body{
     }
 
     .vl{
-        border-left: 2px solid white;
+        border-left: 2px solid peachpuff;
         height: 150px;
-        margin-left: 40px;
+        margin-left: 55px;
         padding-top: 20px;
         margin-top: 40px;
         position: relative;
@@ -63,7 +64,7 @@ body{
 
 // book-movie section starts here
 #book-movie{
-
+  
     .book-movie-bg{
         position: relative;
        // z-index: 1;
@@ -71,7 +72,9 @@ body{
     }
 
     .container{
-        margin-top: 5em;
+        margin-top: 5%;
+        margin-right: 6vw;
+        position:sticky;
     }
 
     .main-txt{
@@ -125,13 +128,17 @@ body{
         //z-index: 1;
     }
 
+    
     .container{
         margin-top: 10em;
+        //margin-left: 10vw;
     }
+    
 
     .main-txt{
         @extend %main-txt;
         text-align: left;
+        margin-top: -900px
     }
 
     .cta-btn{

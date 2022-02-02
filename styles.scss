@@ -8,10 +8,12 @@
 
 body{
     background-color: $chic-pink;
+    overflow-x: hidden;
 }
 
 
 // social media icons
+
 .social{
     margin-top: auto;
     position: sticky;
@@ -61,9 +63,8 @@ body{
         }
     }
 }
-
 // book-movie section starts here
-#book-movie{
+.book-movie{
   
     .book-movie-bg{
         position: relative;
@@ -72,7 +73,7 @@ body{
     }
 
     .container{
-        margin-top: 5%;
+        margin-top: 3%;
         margin-right: 6vw;
         position:sticky;
     }
@@ -143,12 +144,19 @@ body{
 
     .cta-btn{
         @extend %cta-btn;
-        margin-top: 4em;
+        margin-top: 3em;
         letter-spacing: 5px;
     }
 }
+// study tips end here
 
 // SUBPAGE - STUDY TIPS
+.tips-header{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
 #study-tips{
     width: 100%;
     animation: fadeIn;
@@ -167,6 +175,7 @@ body{
         height: 50em;
 
         .tip-container, li{
+            //display: flex;
             background-color: $primary-color;
             padding-left: 15px;
             padding-top: 15px;
@@ -211,3 +220,22 @@ body{
     }
 
 }
+
+// media query starts here
+@media only screen and (max-width: 1470px){
+    body{
+        background-color: aqua;
+        color: black;
+    }
+
+#book-movie{
+    .main-txt{
+        color: black;
+        margin-top: -650px;
+    }
+
+    .cta-btn{
+        background-color: aquamarine;
+        margin-top: -15em;
+    }}
+ }

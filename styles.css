@@ -8,7 +8,7 @@
   src: url(/font/SilkFlowerDemo-Regular.otf);
 }
 
-#book-movie .main-txt, #study-tips .main-txt {
+.book-movie .main-txt, #study-tips .main-txt {
   display: flex;
   position: relative;
   font-family: "SilkFlowerDemo-Regular";
@@ -22,7 +22,7 @@
   animation-duration: 3s;
 }
 
-#book-movie .cta-btn, #study-tips .cta-btn {
+.book-movie .cta-btn, #study-tips .cta-btn {
   width: 18em;
   height: 5em;
   position: relative;
@@ -33,13 +33,13 @@
   transition: all 300ms ease-in;
 }
 
-#book-movie .cta-btn a, #study-tips .cta-btn a {
+.book-movie .cta-btn a, #study-tips .cta-btn a {
   font-size: 40px;
   text-decoration: none;
   color: #fff;
 }
 
-#book-movie .cta-btn:hover, #study-tips .cta-btn:hover {
+.book-movie .cta-btn:hover, #study-tips .cta-btn:hover {
   background-color: #fb8200;
   /*
         a{
@@ -48,11 +48,11 @@
         */
 }
 
-#book-movie .cta-btn:hover::after, #study-tips .cta-btn:hover::after {
+.book-movie .cta-btn:hover::after, #study-tips .cta-btn:hover::after {
   content: attr(data-hover);
 }
 
-#book-movie .cta-btn:hover::after a, #study-tips .cta-btn:hover::after a {
+.book-movie .cta-btn:hover::after a, #study-tips .cta-btn:hover::after a {
   font-size: 40px;
   color: #fff;
 }
@@ -65,6 +65,7 @@
 
 body {
   background-color: #f3a58f;
+  overflow-x: hidden;
 }
 
 .social {
@@ -109,18 +110,18 @@ body {
   transform: none;
 }
 
-#book-movie .book-movie-bg {
+.book-movie .book-movie-bg {
   position: relative;
   width: 100%;
 }
 
-#book-movie .container {
-  margin-top: 5%;
+.book-movie .container {
+  margin-top: 3%;
   margin-right: 6vw;
   position: sticky;
 }
 
-#book-movie .main-txt {
+.book-movie .main-txt {
   margin-top: -900px;
   float: right;
   text-align: right;
@@ -137,7 +138,7 @@ body {
         */
 }
 
-#book-movie .cta-btn {
+.book-movie .cta-btn {
   margin-top: -25em;
   letter-spacing: 5px;
   float: right;
@@ -168,8 +169,14 @@ body {
 }
 
 #study-tips .cta-btn {
-  margin-top: 4em;
+  margin-top: 3em;
   letter-spacing: 5px;
+}
+
+.tips-header {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 #study-tips {
@@ -230,5 +237,20 @@ body {
   color: #fff;
   width: 100%;
   padding: 0;
+}
+
+@media only screen and (max-width: 1470px) {
+  body {
+    background-color: aqua;
+    color: black;
+  }
+  #book-movie .main-txt {
+    color: black;
+    margin-top: -650px;
+  }
+  #book-movie .cta-btn {
+    background-color: aquamarine;
+    margin-top: -15em;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

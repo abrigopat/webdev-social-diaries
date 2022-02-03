@@ -36,12 +36,17 @@ $secondary-font: "SilkFlowerDemo-Regular";
    // z-index: 2;
     animation:bounce;
     animation-duration: 3s;
+    //overflow: hidden;
+    margin-bottom:auto;
+    margin-top: -6.5em;
 }
 
 %cta-btn {
     width: 18em;
     height: 5em;
     position: relative;
+    margin-bottom:auto;
+    //margin-top: -20.5em;
     //margin-top: -30em;
     //z-index: 3;
     border: none;

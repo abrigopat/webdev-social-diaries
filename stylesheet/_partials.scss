@@ -30,7 +30,7 @@ $secondary-font: "SilkFlowerDemo-Regular";
     //line-height: 0.95em;
     letter-spacing: 20%;
     font-weight: bold;
-    font-size: 7vw;
+    font-size: 7.5vw;
     line-height: 1.15em;
     letter-spacing: 5px;
     // z-index: 2;
@@ -78,5 +78,53 @@ $secondary-font: "SilkFlowerDemo-Regular";
             }
         }
         */
+    }
+}
+
+@media only screen and (max-width:1080px){
+    %cta-btn-res{
+        width: 15em;
+        height: 4em;
+        
+        a{
+            font-size: 2em;
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    
+    %cta-btn-res{
+        width: 12em;
+        height: 3em;
+        
+        a{
+            font-size: 1.5em;
+            letter-spacing: .25em;
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    %cta-btn-res{
+        width: 9em;
+        height:2em;
+        
+        a{
+            font-size: 1em;
+            letter-spacing: .25em;
+        }
+    }
+}
+
+@media only screen and (max-width:320px){
+    %cta-btn-res{
+        width: 7em;
+        height:1.5em;
+        
+        a{
+            font-size: .75em;
+            letter-spacing: .25em;
+        }
     }
 }

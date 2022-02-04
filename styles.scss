@@ -13,11 +13,11 @@ body {
 
 // navbar - dan
 .nav-bar {
-    position: sticky;
     background-color: transparent;
     margin-left: 5em;
-    padding-right: 11em;
-    width: 100%;
+    //padding-right: 11em;
+   //margin-right: ;
+    width: 100vw;
     height: 50%;
     //padding-left: 5em;
 
@@ -25,17 +25,45 @@ body {
         width: 100%;
         display: flex;
         align-items: center;
+        margin-left: auto;
 
         .logo {
             width: 80px;
             cursor: pointer;
             margin-top: 10px;
             margin-bottom: 5px;
-            margin-left: 5em;
+            //margin-left: 5em;
+            justify-content: flex-start;
         }
 
         nav {
             text-align: right;
+            justify-content: flex-end;
+            margin-right: 7vw;
+
+            .contact {
+                //background-color: $secondary-color;
+                border: 0.25em solid $secondary-color;
+                border-radius: 2em;
+                width: 9em;
+                height: 3em;
+                text-align: center;
+                justify-content: center;
+                //padding-top: .15em;
+                transition: all 0.25s ease-in;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 30px;
+                    font-family: $primary-font;
+                }
+
+                &:hover {
+                    color: #fff;
+                    background-color: $secondary-color;
+                }
+            }
 
             ul li {
                 margin-top: 20px;
@@ -43,7 +71,7 @@ body {
                 display: inline-block;
                 margin-right: 50px;
 
-                a {
+                .nav-a {
                     text-decoration: none;
                     color: #fff;
                     font-size: 30px;
@@ -73,7 +101,7 @@ body {
         border: none;
         background-color: transparent;
         color: peachpuff;
-        margin-left: 15px;
+        margin-left: 20px;
         padding-top: 30px;
         list-style: none;
         position: relative;
@@ -97,7 +125,7 @@ body {
     .vl {
         border-left: 2px solid peachpuff;
         height: 150px;
-        margin-left: 55px;
+        margin-left: 70px;
         padding-top: 20px;
         margin-top: 40px;
         position: relative;
@@ -118,7 +146,7 @@ body {
     }
 
     .containerr {
-        margin-top: 3%;
+        margin-top: 5%;
         margin-right: 6vw;
         position: sticky;
         //display: grid;
@@ -133,10 +161,11 @@ body {
 
     .cta-btn {
         @extend %cta-btn;
-       // margin-top: -25em;
-       // margin-top: auto;
-        letter-spacing: .5em;
+        // margin-top: -25em;
+        // margin-top: auto;
+        letter-spacing: 0.5em;
         float: right;
+        justify-content: flex-end;
     }
 }
 // book-movie section ends here
@@ -158,14 +187,13 @@ body {
 
 //study tips starts here
 #study-tips {
-
     .study-tips-bg {
         position: relative;
         //z-index: 1;
     }
 
     .containerr {
-        margin-top: 13%;
+        margin-top: 10%;
         margin-left: 15vw;
         position: sticky;
         //margin-left: 10vw;
@@ -186,8 +214,8 @@ body {
 
     .cta-btn {
         @extend %cta-btn;
-        margin-top: 3em;
-        letter-spacing: .75em;
+        margin-top: 2em;
+        letter-spacing: 0.75em;
     }
 }
 // study tips end here
@@ -262,12 +290,80 @@ body {
 }
 
 // MEDIA QUERY STARTS HERE
+@media only screen and (max-width: 1080px){
+   
+    .nav-bar{
+        margin-left: 1em;
+
+        nav{
+            display: none;
+        }
+
+        .navbar {
+            .logo {
+                width: 55px;
+            }
+        }
+    }
+
+    .social {
+        display: none;
+    }
+
+    #book-movie{
+        .cta-btn{
+            @extend %cta-btn-res;
+
+        }
+    }
+
+    #study-tips{
+        .containerr{
+            margin-left: 6vw;
+        }
+
+        .main-txt{
+            margin-bottom: 3%;
+        }
+
+        .cta-btn{
+            @extend %cta-btn-res;
+            margin-top: auto;
+        }
+    }
+}
+
+@media only screen and (max-width:320px){
+    .nav-bar{
+        margin-left: .5em;
+
+        nav{
+            display: none;
+        }
+
+        .navbar {
+            .logo {
+                width: 45px;
+            }
+        }
+    }
+    
+    #study-tips{
+        .containerr{
+            margin-top: 8%;
+        }
+
+        .main-txt{
+            margin-bottom: 2%;
+        }
+    }
+}
 
 /*
     Desktop: 1440x1024
     Widthy - 1024
     Tablet: 768x1024
-*/
+
 
 // 490px query starts here
 @media only screen and (max-width: 490px) {
@@ -321,7 +417,7 @@ body {
             position: sticky;
             //margin-left: 10vw;
         }
-        
+
         .main-txt {
             //margin-top: 13%;
             //margin-left: 10vw;
@@ -333,7 +429,7 @@ body {
             height: 2em;
             position: relative;
             margin-top: -5em;
-            letter-spacing: .25em;
+            letter-spacing: 0.25em;
             margin-left: 0.5em;
 
             a {
@@ -396,8 +492,8 @@ body {
         }
 
         .main-txt {
-           // margin-top: 13%;
-           // margin-left: 15vw;
+            // margin-top: 13%;
+            // margin-left: 15vw;
             font-size: 6vw;
         }
 
@@ -406,7 +502,7 @@ body {
             height: 2em;
             position: relative;
             margin-top: -4.5em;
-            letter-spacing:.25em;
+            letter-spacing: 0.25em;
             margin-left: 0.5em;
 
             a {
@@ -418,3 +514,4 @@ body {
     }
 }
 // 380px query ends here
+*/

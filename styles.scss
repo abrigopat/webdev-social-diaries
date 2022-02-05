@@ -16,7 +16,7 @@ body {
     background-color: transparent;
     margin-left: 5em;
     //padding-right: 11em;
-   //margin-right: ;
+    //margin-right: ;
     width: 100vw;
     height: 50%;
     //padding-left: 5em;
@@ -290,12 +290,12 @@ body {
 }
 
 // MEDIA QUERY STARTS HERE
-@media only screen and (max-width: 1080px){
-   
-    .nav-bar{
+// 1080px query starts here
+@media only screen and (max-width: 1080px) {
+    .nav-bar {
         margin-left: 1em;
 
-        nav{
+        nav {
             display: none;
         }
 
@@ -310,34 +310,35 @@ body {
         display: none;
     }
 
-    #book-movie{
-        .cta-btn{
+    #book-movie {
+        .cta-btn {
             @extend %cta-btn-res;
-
         }
     }
 
-    #study-tips{
-        .containerr{
+    #study-tips {
+        .containerr {
             margin-left: 6vw;
         }
 
-        .main-txt{
+        .main-txt {
             margin-bottom: 3%;
         }
 
-        .cta-btn{
+        .cta-btn {
             @extend %cta-btn-res;
             margin-top: auto;
         }
     }
 }
+// 1080px query ends here
 
-@media only screen and (max-width:320px){
-    .nav-bar{
-        margin-left: .5em;
+// 320px query starts here
+@media only screen and (max-width: 320px) {
+    .nav-bar {
+        margin-left: 0.5em;
 
-        nav{
+        nav {
             display: none;
         }
 
@@ -347,24 +348,20 @@ body {
             }
         }
     }
-    
-    #study-tips{
-        .containerr{
+
+    #study-tips {
+        .containerr {
             margin-top: 8%;
         }
 
-        .main-txt{
+        .main-txt {
             margin-bottom: 2%;
         }
     }
 }
+// 320px query ends here
 
 /*
-    Desktop: 1440x1024
-    Widthy - 1024
-    Tablet: 768x1024
-
-
 // 490px query starts here
 @media only screen and (max-width: 490px) {
     .social {

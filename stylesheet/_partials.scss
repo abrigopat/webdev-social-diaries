@@ -81,50 +81,58 @@ $secondary-font: "SilkFlowerDemo-Regular";
     }
 }
 
-@media only screen and (max-width:1080px){
-    %cta-btn-res{
+// MEDIA QUERY STARTS HERE
+// 1080px query starts here
+@media only screen and (max-width: 1080px) {
+    %cta-btn-res {
         width: 15em;
         height: 4em;
-        
-        a{
+
+        a {
             font-size: 2em;
         }
     }
 }
+// 1080px query ends here
 
-@media only screen and (max-width:768px){
-    
-    %cta-btn-res{
+// 768px query starts here
+@media only screen and (max-width: 768px) {
+    %cta-btn-res {
         width: 12em;
         height: 3em;
-        
-        a{
+
+        a {
             font-size: 1.5em;
-            letter-spacing: .25em;
+            letter-spacing: 0.25em;
         }
     }
 }
+// 768px query ends here
 
-@media only screen and (max-width:768px){
-    %cta-btn-res{
+// 480px query starts here
+@media only screen and (max-width: 480px) {
+    %cta-btn-res {
         width: 9em;
-        height:2em;
-        
-        a{
-            font-size: 1em;
-            letter-spacing: .25em;
-        }
-    }
-}
+        height: 2em;
 
-@media only screen and (max-width:320px){
-    %cta-btn-res{
-        width: 7em;
-        height:1.5em;
-        
-        a{
-            font-size: .75em;
-            letter-spacing: .25em;
+        a {
+            font-size: 1em;
+            letter-spacing: 0.25em;
         }
     }
 }
+// 480px query ends here
+
+// 320px query starts here
+@media only screen and (max-width: 320px) {
+    %cta-btn-res {
+        width: 7em;
+        height: 1.5em;
+
+        a {
+            font-size: 0.75em;
+            letter-spacing: 0.25em;
+        }
+    }
+}
+// 320px query ends here

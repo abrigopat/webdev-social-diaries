@@ -12,7 +12,7 @@
   display: flex;
   position: relative;
   font-family: "SilkFlowerDemo-Regular";
-  color: #fff;
+  color: #fef6eb;
   letter-spacing: 20%;
   font-weight: bold;
   font-size: 7.5vw;
@@ -180,7 +180,7 @@ body {
 }
 
 .nav-bar .navbar nav ul li .nav-a:hover {
-  color: #ffb92b;
+  color: #fb8200;
 }
 
 .social {

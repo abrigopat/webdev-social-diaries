@@ -137,6 +137,7 @@ body {
         }
     }
 }
+
 // book-movie section starts here
 #book-movie {
     .book-movie-bg {
@@ -241,7 +242,7 @@ body {
         position: relative;
         margin-top: 5%;
         margin-bottom: 5%;
-        padding-left: 1.75em;
+        //padding-left: 1.75em;
         width: 30em;
         height: 50em;
 
@@ -286,6 +287,48 @@ body {
                     padding: 0;
                 }
             }
+        }
+    }
+}
+
+// FOOTER STARTS HERE
+.footer{
+    padding-bottom: 10em;
+    padding-top: 10em;
+    animation: fadeIn;
+    animation-duration: 2s;
+    background-color: $primary-color;
+
+    .footer-con{
+        text-align: center;
+
+        h1{
+            color: $true-blue;
+            font-family: $primary-font;
+            font-size: 10em;
+        }
+
+        p{
+            color: #fff;
+            font-family: $primary-font;
+            font-size: 2.5em;
+        }
+
+        .cta-btn{
+            @extend %cta-btn;
+            background-color: $secondary-color;
+            margin-top: 3vw;
+
+            a {
+                font-size: 2.5em;
+                text-decoration: none;
+                color: #fff;
+            }
+        
+            &:hover {
+                background-color: rgba(251, 130, 0, .80);
+            }
+            
         }
     }
 }

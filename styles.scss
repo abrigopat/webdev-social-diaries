@@ -13,7 +13,7 @@ body {
 
 // navbar - dan
 .nav-bar {
-    background-color: transparent;
+    //background-color: transparent;
     margin-left: 5em;
     //padding-right: 11em;
     //margin-right: ;
@@ -100,7 +100,7 @@ body {
     i {
         border: none;
         background-color: transparent;
-        color: peachpuff;
+        color: $peachy;
         margin-left: 20px;
         padding-top: 30px;
         list-style: none;
@@ -123,7 +123,7 @@ body {
     }
 
     .vl {
-        border-left: 2px solid peachpuff;
+        border-left: 2px solid $peachy;
         height: 150px;
         margin-left: 70px;
         padding-top: 20px;
@@ -221,7 +221,6 @@ body {
     }
 }
 // study tips end here
-
 // SUBPAGE - STUDY TIPS
 .tips-header {
     width: 100%;
@@ -291,12 +290,143 @@ body {
     }
 }
 
+
+// SUBPAGE
+.tips-header{
+    margin-top: -.48em;
+}
+
+
+// social media icons
+
+.social {
+    margin-top: auto;
+    position: sticky;
+    margin-bottom: 0;
+    width: 5%;
+    //z-index: 2;
+
+    li,
+    a,
+    i {
+        border: none;
+        background-color: transparent;
+        color: $peachy;
+        margin-left: 20px;
+        padding-top: 30px;
+        list-style: none;
+        position: relative;
+        //z-index: 2;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+
+        &:hover {
+            //color: $primary-color;
+            background: linear-gradient(135deg, $primary-color, $sultry-red);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            //transform: scale(.98);
+            transform: translateY(-5px);
+        }
+    }
+
+    .vl {
+        border-left: 2px solid $peachy;
+        height: 150px;
+        margin-left: 70px;
+        padding-top: 20px;
+        margin-top: 40px;
+        position: relative;
+        //z-index: 2;
+        transition: none;
+
+        &:hover {
+            transform: none;
+        }
+    }
+}
+
+.tips-header{
+    padding-top: 5%;
+}
+
+// SUBPAGE - STUDY TIPS
+.tips-header {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#study-tips{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    animation: fadeIn;
+    animation-duration: 3s;
+    animation: fadeIn;
+    animation-duration: 3s;
+    
+    li{
+        list-style: none;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(0.98);
+            transform: translateY(-5px);
+        }
+    }
+    
+    .tips-list{
+         position: relative;
+         margin-top: 6%;
+         display: flex;
+         justify-content: center;
+
+        .tip-container{
+            background-color: $primary-color;
+            margin-left: 3em;
+            width: 25em;
+            padding-top: 1.75em;
+            margin-top: 1em;
+            
+            img {
+                object-fit: contain;
+                width: 20em;
+                height: 20em;
+            }
+    
+            .tip-txt{
+                font-family: $primary-font;
+    
+                h3{
+                    font-size: 2.5em;
+                    color: $secondary-color;
+                    margin-top: 5%;
+                    padding-left: .5em;
+                }
+    
+                p{
+                    font-size: 1.65em;
+                    color: #fff;
+                    line-height: 1em;
+                    width: 13em;
+                    padding-left: .75em;
+                }
+    
+            }
+        }
+    }
+}
+
 // FOOTER STARTS HERE
 .footer{
     padding-bottom: 10em;
     padding-top: 10em;
     animation: fadeIn;
-    animation-duration: 2s;
+    animation-duration: 3s;
     background-color: $primary-color;
 
     .footer-con{
@@ -338,23 +468,7 @@ body {
 // MEDIA QUERY STARTS HERE
 // 1080px query starts here
 @media only screen and (max-width: 1080px) {
-    .nav-bar {
-        margin-left: 1em;
-
-        nav {
-            display: none;
-        }
-
-        .navbar {
-            .logo {
-                width: 55px;
-            }
-        }
-    }
-
-    .social {
-        display: none;
-    }
+    
 
     #book-movie {
         .cta-btn {
@@ -378,6 +492,28 @@ body {
     }
 }
 // 1080px query ends here
+
+// 950px query starts here
+@media only screen and (max-width:950px){
+    .nav-bar {
+        margin-left: 1em;
+
+        nav {
+            display: none;
+        }
+
+        .navbar {
+            .logo {
+                width: 55px;
+            }
+        }
+    }
+
+    .social {
+        display: none;
+    }
+}
+// 950px query ends here
 
 // 320px query starts here
 @media only screen and (max-width: 320px) {

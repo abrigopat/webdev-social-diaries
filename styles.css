@@ -116,7 +116,6 @@ body {
 }
 
 .nav-bar {
-  background-color: transparent;
   margin-left: 5em;
   width: 100vw;
   height: 50%;
@@ -195,7 +194,7 @@ body {
 .social i {
   border: none;
   background-color: transparent;
-  color: peachpuff;
+  color: #fef6eb;
   margin-left: 20px;
   padding-top: 30px;
   list-style: none;
@@ -216,7 +215,7 @@ body {
 }
 
 .social .vl {
-  border-left: 2px solid peachpuff;
+  border-left: 2px solid #fef6eb;
   height: 150px;
   margin-left: 70px;
   padding-top: 20px;
@@ -358,11 +357,131 @@ body {
   padding: 0;
 }
 
+.tips-header {
+  margin-top: -.48em;
+}
+
+.social {
+  margin-top: auto;
+  position: sticky;
+  margin-bottom: 0;
+  width: 5%;
+}
+
+.social li,
+.social a,
+.social i {
+  border: none;
+  background-color: transparent;
+  color: #fef6eb;
+  margin-left: 20px;
+  padding-top: 30px;
+  list-style: none;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.social li:hover,
+.social a:hover,
+.social i:hover {
+  background: linear-gradient(135deg, #ffc5c4, #ba3c40);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  transform: translateY(-5px);
+}
+
+.social .vl {
+  border-left: 2px solid #fef6eb;
+  height: 150px;
+  margin-left: 70px;
+  padding-top: 20px;
+  margin-top: 40px;
+  position: relative;
+  transition: none;
+}
+
+.social .vl:hover {
+  transform: none;
+}
+
+.tips-header {
+  padding-top: 5%;
+}
+
+.tips-header {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#study-tips {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  animation: fadeIn;
+  animation-duration: 3s;
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+
+#study-tips li {
+  list-style: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#study-tips li:hover {
+  transform: scale(0.98);
+  transform: translateY(-5px);
+}
+
+#study-tips .tips-list {
+  position: relative;
+  margin-top: 6%;
+  display: flex;
+  justify-content: center;
+}
+
+#study-tips .tips-list .tip-container {
+  background-color: #ffc5c4;
+  margin-left: 3em;
+  width: 25em;
+  padding-top: 1.75em;
+  margin-top: 1em;
+}
+
+#study-tips .tips-list .tip-container img {
+  object-fit: contain;
+  width: 20em;
+  height: 20em;
+}
+
+#study-tips .tips-list .tip-container .tip-txt {
+  font-family: "HangryHand-Regular";
+}
+
+#study-tips .tips-list .tip-container .tip-txt h3 {
+  font-size: 2.5em;
+  color: #fb8200;
+  margin-top: 5%;
+  padding-left: .5em;
+}
+
+#study-tips .tips-list .tip-container .tip-txt p {
+  font-size: 1.65em;
+  color: #fff;
+  line-height: 1em;
+  width: 13em;
+  padding-left: .75em;
+}
+
 .footer {
   padding-bottom: 10em;
   padding-top: 10em;
   animation: fadeIn;
-  animation-duration: 2s;
+  animation-duration: 3s;
   background-color: #ffc5c4;
 }
 
@@ -400,6 +519,18 @@ body {
 }
 
 @media only screen and (max-width: 1080px) {
+  #study-tips .containerr {
+    margin-left: 6vw;
+  }
+  #study-tips .main-txt {
+    margin-bottom: 3%;
+  }
+  #study-tips .cta-btn {
+    margin-top: auto;
+  }
+}
+
+@media only screen and (max-width: 950px) {
   .nav-bar {
     margin-left: 1em;
   }
@@ -411,15 +542,6 @@ body {
   }
   .social {
     display: none;
-  }
-  #study-tips .containerr {
-    margin-left: 6vw;
-  }
-  #study-tips .main-txt {
-    margin-bottom: 3%;
-  }
-  #study-tips .cta-btn {
-    margin-top: auto;
   }
 }
 

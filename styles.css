@@ -24,7 +24,7 @@
   margin-top: -6.5em;
 }
 
-#book-movie .cta-btn, #study-tips .cta-btn, .footer .footer-con .cta-btn {
+#book-movie .cta-btn, #study-tips .cta-btn {
   width: 18em;
   height: 5em;
   position: relative;
@@ -36,13 +36,13 @@
   transition: all 300ms ease-in;
 }
 
-#book-movie .cta-btn a, #study-tips .cta-btn a, .footer .footer-con .cta-btn a {
+#book-movie .cta-btn a, #study-tips .cta-btn a {
   font-size: 2.5em;
   text-decoration: none;
   color: #fff;
 }
 
-#book-movie .cta-btn:hover, #study-tips .cta-btn:hover, .footer .footer-con .cta-btn:hover {
+#book-movie .cta-btn:hover, #study-tips .cta-btn:hover {
   background-color: #fb8200;
   /*
         a{
@@ -195,8 +195,8 @@ body {
   border: none;
   background-color: transparent;
   color: #fef6eb;
-  margin-left: 20px;
-  padding-top: 30px;
+  margin-left: 1.30em;
+  padding-top: 1em;
   list-style: none;
   position: relative;
   transition: all 0.2s ease-in-out;
@@ -217,7 +217,7 @@ body {
 .social .vl {
   border-left: 2px solid #fef6eb;
   height: 150px;
-  margin-left: 70px;
+  margin-left: 5.75em;
   padding-top: 20px;
   margin-top: 40px;
   position: relative;
@@ -357,167 +357,180 @@ body {
   padding: 0;
 }
 
-.tips-header {
-  margin-top: -.48em;
+/* SUBPAGE
+.tips-header{
+    margin-top: -.48em;
 }
+
+
+// social media icons
 
 .social {
-  margin-top: auto;
-  position: sticky;
-  margin-bottom: 0;
-  width: 5%;
+    margin-top: auto;
+    position: sticky;
+    margin-bottom: 0;
+    width: 5%;
+    //z-index: 2;
+
+    li,
+    a,
+    i {
+        border: none;
+        background-color: transparent;
+        color: $peachy;
+        margin-left: 20px;
+        padding-top: 30px;
+        list-style: none;
+        position: relative;
+        //z-index: 2;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+
+        &:hover {
+            //color: $primary-color;
+            background: linear-gradient(135deg, $primary-color, $sultry-red);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            //transform: scale(.98);
+            transform: translateY(-5px);
+        }
+    }
+
+    .vl {
+        border-left: 2px solid $peachy;
+        height: 150px;
+        margin-left: 70px;
+        padding-top: 20px;
+        margin-top: 40px;
+        position: relative;
+        //z-index: 2;
+        transition: none;
+
+        &:hover {
+            transform: none;
+        }
+    }
 }
 
-.social li,
-.social a,
-.social i {
-  border: none;
-  background-color: transparent;
-  color: #fef6eb;
-  margin-left: 20px;
-  padding-top: 30px;
-  list-style: none;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
+.tips-header{
+    padding-top: 5%;
 }
 
-.social li:hover,
-.social a:hover,
-.social i:hover {
-  background: linear-gradient(135deg, #ffc5c4, #ba3c40);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  transform: translateY(-5px);
-}
-
-.social .vl {
-  border-left: 2px solid #fef6eb;
-  height: 150px;
-  margin-left: 70px;
-  padding-top: 20px;
-  margin-top: 40px;
-  position: relative;
-  transition: none;
-}
-
-.social .vl:hover {
-  transform: none;
-}
-
+// SUBPAGE - STUDY TIPS
 .tips-header {
-  padding-top: 5%;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 
-.tips-header {
-  width: 100%;
-  overflow-x: hidden;
-  position: relative;
+#study-tips{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    animation: fadeIn;
+    animation-duration: 3s;
+    animation: fadeIn;
+    animation-duration: 3s;
+    
+    li{
+        list-style: none;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(0.98);
+            transform: translateY(-5px);
+        }
+    }
+    
+    .tips-list{
+         position: relative;
+         margin-top: 6%;
+         display: flex;
+         justify-content: center;
+
+        .tip-container{
+            background-color: $primary-color;
+            margin-left: 3em;
+            width: 25em;
+            padding-top: 1.75em;
+            margin-top: 1em;
+            
+            img {
+                object-fit: contain;
+                width: 20em;
+                height: 20em;
+            }
+    
+            .tip-txt{
+                font-family: $primary-font;
+    
+                h3{
+                    font-size: 2.5em;
+                    color: $secondary-color;
+                    margin-top: 5%;
+                    padding-left: .5em;
+                }
+    
+                p{
+                    font-size: 1.65em;
+                    color: #fff;
+                    line-height: 1em;
+                    width: 13em;
+                    padding-left: .75em;
+                }
+    
+            }
+        }
+    }
 }
 
-#study-tips {
-  margin-top: 5%;
-  margin-bottom: 10%;
-  animation: fadeIn;
-  animation-duration: 3s;
-  animation: fadeIn;
-  animation-duration: 3s;
-}
+// FOOTER STARTS HERE
+.footer{
+    padding-bottom: 10em;
+    padding-top: 10em;
+    animation: fadeIn;
+    animation-duration: 3s;
+    background-color: $primary-color;
 
-#study-tips li {
-  list-style: none;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
+    .footer-con{
+        text-align: center;
 
-#study-tips li:hover {
-  transform: scale(0.98);
-  transform: translateY(-5px);
-}
+        h1{
+            color: $true-blue;
+            font-family: $primary-font;
+            font-size: 10em;
+            position: relative;
+            height: 1.25em;
+        }
 
-#study-tips .tips-list {
-  position: relative;
-  margin-top: 6%;
-  display: flex;
-  justify-content: center;
-}
+        p{
+            color: #fff;
+            font-family: $primary-font;
+            font-size: 2.5em;
+        }
 
-#study-tips .tips-list .tip-container {
-  background-color: #ffc5c4;
-  margin-left: 3em;
-  width: 25em;
-  padding-top: 1.75em;
-  margin-top: 1em;
-}
+        .cta-btn{
+            @extend %cta-btn;
+            background-color: $secondary-color;
+            margin-top: 3vw;
 
-#study-tips .tips-list .tip-container img {
-  object-fit: contain;
-  width: 20em;
-  height: 20em;
+            a {
+                font-size: 2.5em;
+                text-decoration: none;
+                color: #fff;
+            }
+        
+            &:hover {
+                background-color: rgba(251, 130, 0, .80);
+            }
+            
+        }
+    }
 }
-
-#study-tips .tips-list .tip-container .tip-txt {
-  font-family: "HangryHand-Regular";
-}
-
-#study-tips .tips-list .tip-container .tip-txt h3 {
-  font-size: 2.5em;
-  color: #fb8200;
-  margin-top: 5%;
-  padding-left: .5em;
-}
-
-#study-tips .tips-list .tip-container .tip-txt p {
-  font-size: 1.65em;
-  color: #fff;
-  line-height: 1em;
-  width: 13em;
-  padding-left: .75em;
-}
-
-.footer {
-  padding-bottom: 10em;
-  padding-top: 10em;
-  animation: fadeIn;
-  animation-duration: 3s;
-  background-color: #ffc5c4;
-}
-
-.footer .footer-con {
-  text-align: center;
-}
-
-.footer .footer-con h1 {
-  color: #43a3a2;
-  font-family: "HangryHand-Regular";
-  font-size: 10em;
-  position: relative;
-  height: 1.25em;
-}
-
-.footer .footer-con p {
-  color: #fff;
-  font-family: "HangryHand-Regular";
-  font-size: 2.5em;
-}
-
-.footer .footer-con .cta-btn {
-  background-color: #fb8200;
-  margin-top: 3vw;
-}
-
-.footer .footer-con .cta-btn a {
-  font-size: 2.5em;
-  text-decoration: none;
-  color: #fff;
-}
-
-.footer .footer-con .cta-btn:hover {
-  background-color: rgba(251, 130, 0, 0.8);
-}
-
+*/
 @media only screen and (max-width: 1080px) {
   #study-tips .containerr {
     margin-left: 6vw;

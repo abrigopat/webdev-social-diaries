@@ -101,8 +101,8 @@ body {
         border: none;
         background-color: transparent;
         color: $peachy;
-        margin-left: 20px;
-        padding-top: 30px;
+        margin-left: 1.30em;
+        padding-top: 1em;
         list-style: none;
         position: relative;
         //z-index: 2;
@@ -125,7 +125,7 @@ body {
     .vl {
         border-left: 2px solid $peachy;
         height: 150px;
-        margin-left: 70px;
+        margin-left: 5.75em;
         padding-top: 20px;
         margin-top: 40px;
         position: relative;
@@ -291,7 +291,7 @@ body {
 }
 
 
-// SUBPAGE
+/* SUBPAGE
 .tips-header{
     margin-top: -.48em;
 }
@@ -464,7 +464,7 @@ body {
         }
     }
 }
-
+*/
 // MEDIA QUERY STARTS HERE
 // 1080px query starts here
 @media only screen and (max-width: 1080px) {
